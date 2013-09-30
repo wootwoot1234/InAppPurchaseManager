@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+           id="com.adobe.plugins.InAppPurchaseManager"
+      version="3.0.0">
+    <name>InAppPurchaseManager</name>
+    <description>Allows In-App Purchases to be made from Phonegap. Wraps StoreKit.</description>
+    <license>MIT</license>
+    <keywords>cordova,phonegap,StoreKit,in-app,inapp,purchase</keywords>
+    
+    <js-module src="www/InAppPurchaseManager.js" name="InAppPurchaseManager">
+        <clobbers target="plugins.inAppPurchaseManager" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="InAppPurchaseManager">
+                <param name="ios-package" value="InAppPurchaseManager"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/ios/InAppPurchaseManager.m" />
+        <source-file src="src/ios/SKProduct+LocalizedPrice.m" />
+        
+        <header-file src="src/ios/InAppPurchaseManager.h" />
+        <header-file src="src/ios/SKProduct+LocalizedPrice.h" />
+    </platform>
+    
+</plugin>
