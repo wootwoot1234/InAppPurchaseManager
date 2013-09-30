@@ -21,7 +21,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="InAppPurchaseManager">
                 <param name="ios-package" value="InAppPurchaseManager"/>
-                <param name="onload" value="true"/>
             </feature>
         </config-file>
 
