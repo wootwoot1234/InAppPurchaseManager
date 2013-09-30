@@ -5,8 +5,8 @@ Allows In-App Purchases to be made from Phonegap. Wraps StoreKit.
 
 ## Adding the Plugin to your project ##
 
-Copy the .h and .m file to the Plugins directory in your project. Copy the .js file to your www directory and reference it from your html file(s). Finally, add StoreKit.framework to your Xcode project if you haven't already.
-
+1. Using Phonegap CLI, in terminal navigate to your projects root directory.
+2. run `phonegap local plugin add https://github.com/wootwoot1234/CDVVideo.git`
 
 ## Using the plugin ##
 
@@ -65,7 +65,7 @@ A basic usage example is below:
 ## BUGS AND CONTRIBUTIONS ##
 For IAP support, please use [the Apple Developer Forum](https://devforums.apple.com/community/ios/integration/storekit).
 
-The latest bleeding-edge version is available [on GitHub](http://github.com/ascorbic/phonegap-plugins/)
+The original version is available [on GitHub by ascorbic](http://github.com/ascorbic/phonegap-plugins/)
 If you have a patch, fork my repo and send me a pull request. Submit bug reports on GitHub, please.
 	
 ## Licence ##
