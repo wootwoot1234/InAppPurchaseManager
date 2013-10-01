@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-           id="com.adobe.plugins.InAppPurchaseManager"
+           id="InAppPurchaseManager"
       version="3.0.0">
     <name>InAppPurchaseManager</name>
     <description>Allows In-App Purchases to be made from Phonegap. Wraps StoreKit.</description>
